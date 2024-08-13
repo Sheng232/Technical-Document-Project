@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: sans-serif;
     display:flex;
@@ -64,4 +67,7 @@ nav > ul > li:hover {
 
 .header{
     padding: 20px;
+}
+section{
+    border: 3px solid rgb(77, 77, 97);
 }
