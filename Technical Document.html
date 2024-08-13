@@ -7,6 +7,7 @@
 				<link rel="stylesheet" href="styles.css">
 			</head>
 			<body>
+				<div class="container">
                 <nav class="navigation-list">
 					<div class="Chess-Documentation">
 						<img id = "pawn-img" src="https://en.chess-chivalry.com/cdn/shop/products/German-knight-pawn-acacia-final.webp?v=1668756899&width=1946"/>
@@ -15,7 +16,7 @@
 						</h1>
 					</div>
 					<ul class="lists">
-						<li class="opening"><a href="#Ponziani">Ponziani Opening</a></li>
+						<a href="#Ponziani"><li class="opening">Ponziani Opening</li>
 						<li class="opening">Opening 2</li>
 						<li class="opening">Opening 3</li>
 						<li class="opening">Opening 4</li>
@@ -25,31 +26,40 @@
 						<li class="opening">Opening 8</li>
 						<li class="opening">Opening 9</li>
 						<li class="opening">Opening 10</li>
-						<li class="opening"><a href="#Vienna">Vienna Opening</a></li>
+						<a href="#Vienna"><li class="opening">Vienna Opening</li></a>
 					</ul>
                 </nav>
                 
 			<main>
-				<div class="ponziani-section">
+				<section class="ponziani-section" id="Ponziani">
+					<h1 class="centered">Ponziani Opening</h1>
+					<div class="inline">
+				<div class="intro">
 				<div class="header Ponziani">
-				<h1>Ponziani Opening</h1>
 				<p>The Ponziani Opening is a chess opening that begins with the moves: <strong>1. e4 e5 2. Nf3 Nc6 3. c3</strong></p>
 				</div>
-				<div class="board">
-				<iframe class="chessboard" id="Ponziani-Opening" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12078019"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12078019"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
-				</div>
-				</div>
-				<div class="empty-space">
+				<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12078019"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12078019"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+			</div>
+			<div class="variations">
+				<article>
+					<div class="header">
+					<p> <strong>3 ... Bc5 </strong></p>
+					<p>The move Bc5 is a mistake because it runs directly into <strong>4. d4</strong>, making the black player into trading <strong>4 ... exd4 5 cxd4</strong> and giving a helpful check on <strong> 5. ... Bb4+ 6. Nc3</strong> or retreating back to <strong> Bb6</strong>, a waste of tempo.</p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12080369"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12080369"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+					</div>
+				</article>
+			</div>
+		</div>
+			</section>
 
-				</div>
-				<div class="Vienna-section">
+				<section class="Vienna-section" id="Vienna">
 					<div class="header Vienna">
-						<h1>Vienna Opening</h1>
+						<h1 class="centered">Vienna Opening</h1>
 						<p>The Vienna Game is an opening in chess that begins with the moves: <strong>1. e4 e5 2. Nc3</strong></p>
 						</div>
-						<iframe class="chessboard" id="Vienna" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12078073"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12078073"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
-
-				</div>
+						<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12078073"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12078073"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+					</section>
 			</main>
+				</div>
 				</body>
 					</html>
