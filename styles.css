@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display:flex;
+    background-color:rgb(200, 200, 209);
+}
+.navigation-list{
+    width: 330px;
+    height: 200vh;
+    background-color: rgb(169, 183, 187);
+}
+#pawn-img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+.Chess-Documentation{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.Chess-Documentation h1{
+    position: absolute;
+    padding: 10px;
+    left: 80px;
+    top: 8px;
+}
+li{
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    border: 2px solid rgb(128, 128, 143);
+    list-style-position: inside;
+    list-style-type: none;
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+li>a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    padding-left: 0;
+    margin: 0 auto;
+}
+nav > ul > li:hover {
+    background-color: #76768f;
+    color: #2a2a91;
+    cursor: pointer;
+  }
+.empty-space{
+    width:500px;
+    height:500px;
+}
+.chessboard {
+    padding: 10px;
+    width: 100%; 
+    height: 415px; 
+    margin-left: 10px;
+}
+
+.header{
+    padding: 20px;
+}
