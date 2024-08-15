@@ -8,56 +8,169 @@
 			</head>
 			<body>
 				<div class="container">
-                <nav class="navigation-list">
+                <nav class="navigation-list" id="navbar">
+					<header>
 					<div class="Chess-Documentation">
 						<img id = "pawn-img" src="https://en.chess-chivalry.com/cdn/shop/products/German-knight-pawn-acacia-final.webp?v=1668756899&width=1946"/>
 						<h1>
-						Chess Documentation	
+						Chess Opening Documentation	
 						</h1>
 					</div>
+				</header>
 					<ul class="lists">
-						<a href="#Ponziani"><li class="opening">Ponziani Opening</li>
-						<li class="opening">Opening 2</li>
-						<li class="opening">Opening 3</li>
-						<li class="opening">Opening 4</li>
-						<li class="opening">Opening 5</li>
-						<li class="opening">Opening 6</li>
-						<li class="opening">Opening 7</li>
-						<li class="opening">Opening 8</li>
-						<li class="opening">Opening 9</li>
-						<li class="opening">Opening 10</li>
-						<a href="#Vienna"><li class="opening">Vienna Opening</li></a>
+						<a href="#Ponziani_Opening" class="nav-link"><li class="opening">Ponziani Opening</li></a>
+                		<a href="#Caro_Kann_Defense" class="nav-link"><li class="opening">Caro Kann Defense</li></a>
+                		<a href="#Sicilian_Defense" class="nav-link"><li class="opening">Sicilian Defense</li></a>
+                		<a href="#Italian_Game" class="nav-link"><li class="opening">Italian Game</li></a>
+                		<a href="#Ruy_Lopez" class="nav-link"><li class="opening">Ruy Lopez</li></a>
+                		<a href="#French_Defense" class="nav-link"><li class="opening">French Defense</li></a>
+                		<a href="#Modern_Defense" class="nav-link"><li class="opening">Modern Defense</li></a>
+                		<a href="#Queen's_Gambit" class="nav-link"><li class="opening">Queen's Gambit</li></a>
+                		<a href="#King's_Indian_Defense" class="nav-link"><li class="opening">King's Indian Defense</li></a>
+                		<a href="#Nimzo_Indian_Defense" class="nav-link"><li class="opening">Nimzo Indian Defense</li></a>
+                		<a href="#Vienna_Game" class="nav-link"><li class="opening">Vienna Game</li></a>
 					</ul>
                 </nav>
                 
-			<main>
-				<section class="ponziani-section" id="Ponziani">
-					<h1 class="centered">Ponziani Opening</h1>
+			<main id="main-doc">
+				<section id="Ponziani_Opening" class="main-section">
+					<header class="centered">
+					Ponziani Opening
+				</header>
 					<div class="inline">
-				<div class="intro">
-				<div class="header Ponziani">
-				<p>The Ponziani Opening is a chess opening that begins with the moves: <strong>1. e4 e5 2. Nf3 Nc6 3. c3</strong></p>
-				</div>
-				<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12078019"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12078019"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
-			</div>
-			<div class="variations">
-				<article>
-					<div class="header">
-					<p> <strong>3 ... Bc5 </strong></p>
-					<p>The move Bc5 is a mistake because it runs directly into <strong>4. d4</strong>, making the black player into trading <strong>4 ... exd4 5 cxd4</strong> and giving a helpful check on <strong> 5. ... Bb4+ 6. Nc3</strong> or retreating back to <strong> Bb6</strong>, a waste of tempo.</p>
-					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12080369"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12080369"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
-					</div>
+					<article class="intro">
+					<p class="header"> <strong>1. e4 e5 2. Nf3 Nc6 3. c3 ... </strong></p>
+					<p class= "tab">The Ponziani Opening is a chess opening that begins with the moves: <strong>1. e4 e5 2. Nf3 Nc6 3. c3</strong></p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12078019"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12078019"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
 				</article>
+				<article class="variation">
+					<p class="header" id="Bc5"> <strong>3 ... Bc5 </strong></p>
+					<p class="tab">The move Bc5 is a mistake because it runs directly into <strong>4. d4</strong>, making the black player into trading <strong>4 ... exd4 5 cxd4</strong> and giving a helpful check on <strong> 5. ... Bb4+ 6. Nc3</strong> or retreating back to <strong> Bb6</strong>, a waste of tempo.</p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12080369"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12080369"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+				</article>
+				<article class="variation">
+						<p class="tab"><strong>3 ... Nf6</strong></p>
+						<p class="tab">The most logical move after <strong>3. c3</strong> is <strong>3 ... Nf6</strong>, attacking our pawn on <strong>e4</strong>. But we shock our opponent by continuing with the move <strong>4. d4</strong>.</p>
+						<p class="tab">If our opponent continues with a passive move such as <strong> 4. ... d6</strong>, we can simply continue to develop with <strong>Bd3</strong> and <strong>O-O</strong>. However, let's see what happens if black takes the seemingly free pawn on <strong>e4</strong></p>
+						<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12083477"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12083477"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+						<p>The game gets tricky after <strong>d5</strong> followed by <strong>Nxe5</strong>, most online games ends with <strong>6. ... d6</strong>, losing immediately to <strong>Bb5+</strong>. However if our opponent sees through our trap and follows up with <strong>6. ... Ng6 7. Qe2</strong>, the game continues with play from both side.</p>
+						
+					</article>
 			</div>
-		</div>
+
+			</section>
+			<section id="Caro_Kann_Defense" class="main-section">
+					<header class="centered">Caro Kann Defense
+					</header>
+					<article class="intro">
+					<p class="header"> <strong>1. e4 c6 </strong></p>
+					<p class="tab">The Caro Kann Defense is a black opening that begins with the move <strong>1. e4 c6</strong></p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12082939"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12082939"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+					</article>
 			</section>
 
-				<section class="Vienna-section" id="Vienna">
-					<div class="header Vienna">
-						<h1 class="centered">Vienna Opening</h1>
+			<section id="Sicilian_Defense" class="main-section">
+					<header>
+					<h1 class="centered">Sicilian Defense</h1>
+				</header>
+					<article class="intro">
+						<p class="header"> <strong>1. e4 c5 </strong></p>
+					<p class="tab">The Sicilian Defense is a black opening that begins with the move <strong>1. e4 c5</strong></p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12083009"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12083009"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+				</article>
+
+			</section>
+
+			<section id="Italian_Game" class="main-section">
+					<header class="centered">
+						Italian Game
+				</header>
+					<article class="intro">
+						<p class="header"> <strong>1. e4 e5 2.Nf3 Nc6 3.Bc4 ... </strong></p>
+					<p class="tab">The Italian is a white opening that begins with the move <strong>1. e4 e5 2.Nf3 Nc6 3.Bc4 ...</strong></p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12083043"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12083043"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+					</article>
+
+			</section>
+
+			<section id="Ruy_Lopez" class="main-section">
+					<header class="centered"> 
+						Ruy Lopez
+				</header>
+					<article class="intro">
+						<p class="header"> <strong>1. e4 e5 2.Nf3 Nc6 3.Bb5 ... </strong></p>
+					<p class="tab">The Ruy-Lopez is a white opening that begins with the move <strong>1. e4 e5 2.Nf3 Nc6 3.Bb5 ...</strong></p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12083049"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12083049"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+					</article>
+			</section>
+
+			<section id="French_Defense" class="main-section">
+				<header class="centered">
+					French Defense
+				</header>
+					<article class="intro">
+						<p class="header"> <strong>1. e4 e6 </strong></p>
+					<p class="tab">The French Defense is a black opening that begins with the move <strong>1. e4 e6</strong></p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12083063"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12083063"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+				</article>
+			</section>
+
+			<section id="Modern_Defense" class="main-section">
+				<header class="centered">
+					Modern Defense
+				</header>
+					<article class="intro">
+						<p class="header"> <strong>1. e4 g6 </strong></p>
+					<p class="tab">The Modern Defense is a black opening that begins with the move <strong>1. e4 g6</strong></p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12083073"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12083073"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+				</article>
+
+
+			</section>
+
+			<section id="Queen's_Gambit" class="main-section">
+				<header class="centered">
+					Queen's Gambit
+				</header>
+					<article class="intro">
+						<p class="header"> <strong>1. d4 d5 2. c4 ...</strong></p>
+					<p class="tab">The Queen's Gambit is a white opening that begins with the move <strong>1. d4 d5 2. c4 ...</strong></p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12083085"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12083085"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+				</article>
+			</section>
+
+			<section id="King's_Indian_Defense" class="main-section">
+				<header class="centered">
+					King's Indian Defense
+				</header>
+					<article class="intro">
+						<p class="header"> <strong>1. d4 Nf6 2. c4 g6</strong></p>
+					<p class="tab">The King's Indian Defense is a black opening that begins with the move <strong>1. d4 Nf6 2. c4 g6</strong></p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12083087"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12083087"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+				</article>
+			</section>
+
+			<section id="Nimzo_Indian_Defense" class="main-section">
+				<header class="centered">
+					Nimzo Indian Defense
+				</header>
+					<article class="intro">
+						<p class="header"> <strong>1. d4 Nf6 2. c4 e6 3. Nc3 Bb4</strong></p>
+					<p class="tab">The Nimzo Indian Defense is a black opening that begins with the move <strong>1. d4 Nf6 2. c4 e6 3. Nc3 Bb4</strong></p>
+					<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12083103"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12083103"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+				</article>
+			</section>
+
+				<section id="Vienna_Game" class="main-section">
+					<header class="centered">
+						Vienna Game
+					</header>
+						<article class="intro">
+							<p class="header"> <strong>1. e4 e5 2. Nc3 ...</strong></p>
 						<p>The Vienna Game is an opening in chess that begins with the moves: <strong>1. e4 e5 2. Nc3</strong></p>
-						</div>
+						
 						<iframe class="chessboard" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=12078073"></iframe><script>window.addEventListener("message",e=>{e['data']&&"12078073"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+						</article>
 					</section>
 			</main>
 				</div>
